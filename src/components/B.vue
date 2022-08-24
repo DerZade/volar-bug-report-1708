@@ -3,5 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import A from "./A.vue";
+import { defineAsyncComponent } from "vue";
+
+const A = defineAsyncComponent(() => import("./A.vue"));
 </script>
